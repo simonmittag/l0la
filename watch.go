@@ -5,5 +5,5 @@ import "fmt"
 const Version = "v0.1.0"
 
 func Watch(pid uint) {
-	fmt.Println("watching pid %d", pid)
+	fmt.Printf("watching pid %d\n", pid)
 }

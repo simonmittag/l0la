@@ -37,6 +37,7 @@ func main() {
 func parsePid() uint {
 	if len(flag.Args()) != 1 {
 		usage()
+		os.Exit(0)
 	}
 	pid, _ := strconv.Atoi(flag.Args()[0])
 	return uint(pid)
