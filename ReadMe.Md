@@ -26,7 +26,12 @@ brew tap simonmittag/cli &&
 Usage: l0la [-v] [-h] [PID]
   -h    print help
   -v    print version
+```
 
+## Examples
+### Monitor your node server
+```
+clear && pgrep node | xargs l0la
 ```
 
 ## Contributions
