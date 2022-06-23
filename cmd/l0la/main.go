@@ -34,13 +34,13 @@ func main() {
 	}
 }
 
-func parsePid() uint {
+func parsePid() int {
 	if len(flag.Args()) != 1 {
 		usage()
 		os.Exit(0)
 	}
 	pid, _ := strconv.Atoi(flag.Args()[0])
-	return uint(pid)
+	return pid
 }
 
 func usage() {
