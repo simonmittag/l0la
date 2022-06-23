@@ -16,14 +16,14 @@ while active.
 ```
 brew tap simonmittag/cli &&
   brew install l0la &&
-  l0la -v
+  l0la 
 ```
 
 ## Usage
 ```
 λ l0la -h
 <l0la> v0.1.0
-Usage: l0la [-v] [pid]
+Usage: l0la [-v] [-h] [PID]
   -h    print help
   -v    print version
 
