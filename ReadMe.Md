@@ -22,8 +22,11 @@ brew tap simonmittag/cli &&
 ## Usage
 ```
 λ l0la -h
-  Usage: l0la [-v] pid
-    -v	print version
+<l0la> v0.1.0
+Usage: l0la [-v] [pid]
+  -h    print help
+  -v    print version
+
 ```
 
 ## Contributions
