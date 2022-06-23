@@ -10,7 +10,7 @@ import (
 const Version = "v0.1.0"
 
 func Watch(pid int) {
-	fmt.Printf("watching pid %s\n", FGroup(pid))
+	fmt.Printf("watching pid: %v\n", pid)
 
 	l1 := uilive.New()
 	l1.RefreshInterval = time.Hour * 24 * 30

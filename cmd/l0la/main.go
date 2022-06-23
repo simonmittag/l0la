@@ -1,8 +1,10 @@
 package main
 
 import (
+	"errors"
 	"flag"
 	"fmt"
+	. "github.com/logrusorgru/aurora"
 	"github.com/simonmittag/l0la"
 	"os"
 	"strconv"
@@ -12,6 +14,7 @@ type Mode uint8
 
 const (
 	Watch Mode = 1 << iota
+	Usage
 	Version
 )
 
@@ -20,35 +23,50 @@ var pattern = "/mse6/"
 func main() {
 	mode := Watch
 	vM := flag.Bool("v", false, "print version")
+	vU := flag.Bool("h", false, "print help")
 	flag.Parse()
 
 	if *vM {
 		mode = Version
+	} else if *vU {
+		mode = Usage
 	}
+
+	pid, err := parsePid()
 
 	switch mode {
 	case Watch:
-		l0la.Watch(parsePid())
+		if err == nil {
+			printVersion()
+			l0la.Watch(pid)
+		} else {
+			printUsage()
+		}
+	case Usage:
+		printUsage()
 	case Version:
 		printVersion()
 	}
 }
 
-func parsePid() int {
+func parsePid() (int, error) {
 	if len(flag.Args()) != 1 {
-		usage()
-		os.Exit(0)
+		return 0, errors.New("pid not supplied")
 	}
-	pid, _ := strconv.Atoi(flag.Args()[0])
-	return pid
+	pid, err := strconv.Atoi(flag.Args()[0])
+	return pid, err
 }
 
-func usage() {
-	fmt.Fprintf(os.Stdout, "Usage: l0la [-v] pid\n")
+func printUsage() {
+	printVersion()
+	fmt.Fprintln(os.Stdout, "Usage: l0la [-v] [pid]")
 	flag.PrintDefaults()
 }
 
 func printVersion() {
-	fmt.Printf("l0la %s\n", l0la.Version)
-	os.Exit(0)
+	fmt.Printf("\n"+Red("<").String()+"l"+Blue("0").String()+"la"+Red(">").String()+" %s\n", l0la.Version)
+}
+
+func printError(err error) {
+	fmt.Printf("unable to watch: %v", err)
 }
