@@ -1,6 +1,9 @@
 package l0la
 
-import "strconv"
+import (
+	"fmt"
+	"strconv"
+)
 
 func FGroup(n int) string {
 	in := strconv.FormatInt(int64(n), 10)
@@ -24,5 +27,14 @@ func FGroup(n int) string {
 			j, k = j-1, 0
 			out[j] = ','
 		}
+	}
+}
+
+func LPad(n int, v string) string {
+	if len(v) < n {
+		f := fmt.Sprintf("%%%ds", n)
+		return fmt.Sprintf(f, v)
+	} else {
+		return v
 	}
 }

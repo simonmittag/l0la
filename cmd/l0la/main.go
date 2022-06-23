@@ -4,7 +4,6 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	. "github.com/logrusorgru/aurora"
 	"github.com/simonmittag/l0la"
 	"os"
 	"strconv"
@@ -37,7 +36,6 @@ func main() {
 	switch mode {
 	case Watch:
 		if err == nil {
-			printVersion()
 			l0la.Watch(pid)
 		} else {
 			printUsage()
@@ -45,7 +43,7 @@ func main() {
 	case Usage:
 		printUsage()
 	case Version:
-		printVersion()
+		fmt.Println(l0la.Logo())
 	}
 }
 
@@ -58,13 +56,9 @@ func parsePid() (int, error) {
 }
 
 func printUsage() {
-	printVersion()
+	fmt.Println(l0la.Logo())
 	fmt.Fprintln(os.Stdout, "Usage: l0la [-v] [pid]")
 	flag.PrintDefaults()
-}
-
-func printVersion() {
-	fmt.Printf("\n"+Red("<").String()+"l"+Blue("0").String()+"la"+Red(">").String()+" %s\n", l0la.Version)
 }
 
 func printError(err error) {
