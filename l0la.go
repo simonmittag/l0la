@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-const Version = "v0.1.0"
+const Version = "v0.1.1"
 
 func Watch(pid int) {
 	l01 := uilive.New()

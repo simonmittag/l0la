@@ -8,7 +8,7 @@ while active.
 [![Github Activity](https://img.shields.io/github/commit-activity/m/simonmittag/mse6)](https://img.shields.io/github/commit-activity/m/simonmittag/mse6)  
 [![Go Version](https://img.shields.io/github/go-mod/go-version/simonmittag/l0la)](https://img.shields.io/github/go-mod/go-version/simonmittag/l0la)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Version](https://img.shields.io/badge/version-0.1.0-orange)](https://github.com/simonmittag/mse6/releases/tag/v0.1.0)
+[![Version](https://img.shields.io/badge/version-0.1.1-orange)](https://github.com/simonmittag/mse6/releases/tag/v0.1.0)
 
 ## Up and running
 
