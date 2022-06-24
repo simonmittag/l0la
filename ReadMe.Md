@@ -5,10 +5,10 @@ time. It combines the output of `lsof`, `ps` and `netstat`, then monitors these 
 while active.
 
 [![Circleci Builds](https://circleci.com/gh/simonmittag/l0la.svg?style=shield)](https://circleci.com/gh/simonmittag/l0la)
-[![Github Activity](https://img.shields.io/github/commit-activity/m/simonmittag/mse6)](https://img.shields.io/github/commit-activity/m/simonmittag/mse6)  
+[![Github Activity](https://img.shields.io/github/commit-activity/m/simonmittag/mse6)](https://img.shields.io/github/commit-activity/m/simonmittag/l0la)  
 [![Go Version](https://img.shields.io/github/go-mod/go-version/simonmittag/l0la)](https://img.shields.io/github/go-mod/go-version/simonmittag/l0la)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Version](https://img.shields.io/badge/version-0.1.1-orange)](https://github.com/simonmittag/mse6/releases/tag/v0.1.0)
+[![Version](https://img.shields.io/badge/version-0.1.1-orange)](https://github.com/simonmittag/l0la/releases/tag/v0.1.1)
 
 ## Up and running
 
@@ -22,7 +22,7 @@ brew tap simonmittag/cli &&
 ## Usage
 ```
 λ l0la -h
-<l0la> v0.1.0
+<l0la> v0.1.1
 Usage: l0la [-v] [-h] [PID]
   -h    print help
   -v    print version
