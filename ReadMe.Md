@@ -28,11 +28,14 @@ Usage: l0la [-v] [-h] [PID]
   -v    print version
 ```
 
-## Examples
-### Monitor your node server
+## Samples
+
+Monitor a web server
 ```
-clear && pgrep node | xargs l0la
+clear && pgrep j8a | xargs l0la
 ```
+
+![](terminal.gif)
 
 ## Contributions
 The l0la team welcomes all [contributors](https://github.com/simonmittag/mse6/blob/master/CONTRIBUTING.md). Everyone interacting with the project's codebase, issue trackers, chat rooms and mailing lists
