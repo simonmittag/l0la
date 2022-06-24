@@ -1,0 +1,30 @@
+builds:
+  - binary: p0d
+    main: cmd/l0la/main.go
+    goos:
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=0
+
+release:
+  prerelease: auto
+
+universal_binaries:
+  - replace: true
+
+brews:
+  -
+    name: l0la
+    homepage: "https://github.com/simonmittag/l0la"
+    tap:
+      owner: simonmittag
+      name: homebrew-cli
+    commit_author:
+      name: simonmittag
+      email: simonmittag@gmail.com
+
+checksum:
+  name_template: 'checksums.txt'
