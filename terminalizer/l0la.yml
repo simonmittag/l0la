@@ -1,0 +1,202 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/simonmittag/projects/l0la/terminalizer
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 80
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 16
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 325
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: solid
+    title: null
+    style:
+      backgroundColor: black
+      boxShadow: none
+      margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 16
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+
+  # Theme
+  theme:
+    background: black
+    foreground: green
+    cursor: green
+    black: "#1d1d1d"
+    red: "#cb1b00"
+    green: "#00c200"
+    yellow: "#c7c400"
+    blue: "#0325c7"
+    magenta: "#c930c7"
+    cyan: "#00c5c7"
+    white: "#c7c7c7"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 125
+    content: p
+  - delay: 227
+    content: g
+  - delay: 206
+    content: r
+  - delay: 81
+    content: e
+  - delay: 612
+    content: p
+  - delay: 531
+    content: ' '
+  - delay: 181
+    content: j
+  - delay: 337
+    content: '8'
+  - delay: 294
+    content: a
+  - delay: 143
+    content: ' '
+  - delay: 341
+    content: '|'
+  - delay: 195
+    content: ' '
+  - delay: 137
+    content: x
+  - delay: 253
+    content: a
+  - delay: 83
+    content: r
+  - delay: 278
+    content: g
+  - delay: 190
+    content: s
+  - delay: 146
+    content: ' '
+  - delay: 665
+    content: l
+  - delay: 383
+    content: '0'
+  - delay: 593
+    content: l
+  - delay: 170
+    content: a
+  - delay: 562
+    content: "\r\n"
+  - delay: 336
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                         0\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                        11\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,276\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                     0.00%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 326
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                         0\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                        11\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,276\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                     0.00%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 337
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                         0\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                        11\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,276\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                     0.00%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 257
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                         0\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                        11\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,276\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                     0.00%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 163
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                         0\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                        11\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,276\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                     0.00%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 341
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                         0\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                        11\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,276\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                     0.00%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 322
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                         0\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                        11\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,276\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                     0.00%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 371
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                         0\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                        11\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,276\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                     0.00%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 236
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                         1\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                        12\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,276\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                     0.00%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 253
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                        20\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                        93\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,280\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                   401.80%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 287
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                       146\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                       212\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,284\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                   391.00%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 357
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                       264\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                       331\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,284\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                   459.80%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 307
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                       384\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                       463\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,284\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                   449.70%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 363
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                       510\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                       583\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,284\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                   355.50%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 344
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                       634\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                       709\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,288\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                   379.30%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 385
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                       758\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                       841\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,288\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                   399.30%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 352
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                       900\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                       991\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,288\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                   453.60%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 315
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                     1,040\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                     1,119\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,288\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                   424.60%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 327
+    content: "\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[31m<\e[0ml\e[34m0\e[0mla\e[31m>\e[0m v0.1.1\r\nwatching pid: 98652\r\n┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\r\n┃ TCP conns   ┃ \e[31m                     1,182\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Open files  ┃ \e[33m                     1,261\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ Threads     ┃ \e[34m                       137\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ RSS bytes   ┃ \e[38;5;240m                 1,093,288\e[0m ┃\r\n┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\r\n┃ CPU percent ┃ \e[35m                   403.60%\e[0m ┃\r\n┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n"
+  - delay: 392
+    content: "^C\r\n"
+  - delay: 329
+    content: "\e[?2004hλ "
+
