@@ -32,7 +32,7 @@ Usage: l0la [-v] [-h] [PID]
 
 Monitor a web server
 ```
-clear && pgrep j8a | xargs l0la
+pgrep j8a | xargs l0la
 ```
 
 ![](terminal.gif)
