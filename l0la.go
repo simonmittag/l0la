@@ -23,9 +23,11 @@ func Watch(pid int) {
 	}
 
 	pad := 26
+	s := NewSpinnerAnim()
+
 	for {
 		fmt.Fprint(lines[0], Logo()+"\n")
-		fmt.Fprintf(lines[0], "watching pid: %v\n", pid)
+		fmt.Fprintf(lines[0], "%s watching pid: %v %s \n", s.Next(), pid, Pidgrepstatus(pid))
 		fmt.Fprintf(lines[0], "┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\n")
 		fmt.Fprintf(lines[0], "┃ TCP conns   ┃ %s ┃\n", Red(LPad(pad, FGroup(Conngrep(pid)))))
 		fmt.Fprintf(lines[0], "┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\n")
