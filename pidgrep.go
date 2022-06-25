@@ -8,7 +8,7 @@ import (
 
 const pidgrepcmd = "ps -p %d | grep -v PID | wc -l"
 
-func Pidgrep(pid int) bool {
+func PidgrepActive(pid int) bool {
 	cmd := fmt.Sprintf(pidgrepcmd, pid)
 	stdout, _, _ := Shellout(cmd)
 	r, _ := strconv.Atoi(strings.TrimSpace(stdout))
@@ -16,7 +16,7 @@ func Pidgrep(pid int) bool {
 }
 
 func Pidgrepstatus(pid int) string {
-	if Pidgrep(pid) {
+	if PidgrepActive(pid) {
 		return "[ACTIVE]"
 	} else {
 		return "[DEAD?]"

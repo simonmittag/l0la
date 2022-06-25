@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-const Version = "v0.1.1"
+const Version = "v0.1.2"
 
 func Watch(pid int) {
 	lines := make([]io.Writer, 0)
@@ -25,22 +25,27 @@ func Watch(pid int) {
 	pad := 26
 	s := NewSpinnerAnim()
 
-	for {
-		fmt.Fprint(lines[0], Logo()+"\n")
-		fmt.Fprintf(lines[0], "%s watching pid: %v %s \n", s.Next(), pid, Pidgrepstatus(pid))
-		fmt.Fprintf(lines[0], "┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\n")
-		fmt.Fprintf(lines[0], "┃ TCP conns   ┃ %s ┃\n", Red(LPad(pad, FGroup(Conngrep(pid)))))
-		fmt.Fprintf(lines[0], "┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\n")
-		fmt.Fprintf(lines[0], "┃ Open files  ┃ %s ┃\n", Yellow(LPad(pad, FGroup(Filegrep(pid)))))
-		fmt.Fprintf(lines[0], "┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\n")
-		fmt.Fprintf(lines[0], "┃ Threads     ┃ %s ┃\n", Blue(LPad(pad, FGroup(Threadgrep(pid)))))
-		fmt.Fprintf(lines[0], "┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\n")
-		fmt.Fprintf(lines[0], "┃ RSS bytes   ┃ %s ┃\n", Gray(8, LPad(pad, FGroup(Memgrep(pid)))))
-		fmt.Fprintf(lines[0], "┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\n")
-		fmt.Fprintf(lines[0], "┃ CPU percent ┃ %s ┃\n", Magenta(LPad(pad, Cpugrep(pid))))
-		fmt.Fprintf(lines[0], "┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n")
-		l0.Flush()
-		time.Sleep(time.Millisecond * 500)
+	if PidgrepActive(pid) {
+		for {
+			fmt.Fprint(lines[0], Logo()+"\n")
+			fmt.Fprintf(lines[0], "%s watching pid: %v %s \n", s.Next(), pid, Pidgrepstatus(pid))
+			fmt.Fprintf(lines[0], "┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\n")
+			fmt.Fprintf(lines[0], "┃ TCP conns   ┃ %s ┃\n", Red(LPad(pad, FGroup(Conngrep(pid)))))
+			fmt.Fprintf(lines[0], "┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\n")
+			fmt.Fprintf(lines[0], "┃ Open files  ┃ %s ┃\n", Yellow(LPad(pad, FGroup(Filegrep(pid)))))
+			fmt.Fprintf(lines[0], "┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\n")
+			fmt.Fprintf(lines[0], "┃ Threads     ┃ %s ┃\n", Blue(LPad(pad, FGroup(Threadgrep(pid)))))
+			fmt.Fprintf(lines[0], "┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\n")
+			fmt.Fprintf(lines[0], "┃ RSS bytes   ┃ %s ┃\n", Gray(8, LPad(pad, FGroup(Memgrep(pid)))))
+			fmt.Fprintf(lines[0], "┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\n")
+			fmt.Fprintf(lines[0], "┃ CPU percent ┃ %s ┃\n", Magenta(LPad(pad, Cpugrep(pid))))
+			fmt.Fprintf(lines[0], "┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n")
+			l0.Flush()
+			time.Sleep(time.Millisecond * 500)
+		}
+	} else {
+		fmt.Printf(Logo())
+		fmt.Printf("\n%d not a pid, insufficient privileges or dead?\n", pid)
 	}
 }
 
