@@ -1,8 +1,7 @@
 ![](l0la-100.png)
 
-l0la is a sidecar cli utility to monitor vital stats of other processes on OSX at development
-time. It combines the output of `lsof`, `ps` and `netstat`, then monitors these values
-while active.
+l0la is a simple cli utility that combines the output of `lsof`, `ps` and `netstat` to continuously monitor cpu, 
+threads, files, network connections of your process for debugging purposes.
 
 [![Circleci Builds](https://circleci.com/gh/simonmittag/l0la.svg?style=shield)](https://circleci.com/gh/simonmittag/l0la)
 [![Github Activity](https://img.shields.io/github/commit-activity/m/simonmittag/mse6)](https://img.shields.io/github/commit-activity/m/simonmittag/l0la)  
@@ -15,7 +14,6 @@ while active.
 * bumped to go 1.20
 
 ## Up and running
-
 ### Homebrew
 ```
 brew tap simonmittag/cli &&
@@ -34,7 +32,12 @@ Usage: l0la [-v] [-h] [PID]
 
 ## Samples
 
-Monitor a web server
+Monitor a process by pid
+```
+l0la $pid
+```
+
+Monitor a process by name
 ```
 pgrep j8a | xargs l0la
 ```
