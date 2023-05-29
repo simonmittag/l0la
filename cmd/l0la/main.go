@@ -17,8 +17,6 @@ const (
 	Version
 )
 
-var pattern = "/mse6/"
-
 func main() {
 	mode := Watch
 	vM := flag.Bool("v", false, "print version")
