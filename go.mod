@@ -1,6 +1,6 @@
 module github.com/simonmittag/l0la
 
-go 1.18
+go 1.20
 
 require (
 	github.com/gosuri/uilive v0.0.4 // indirect
