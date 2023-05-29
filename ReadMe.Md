@@ -1,4 +1,4 @@
-![](l0la.png)
+![](l0la.jpg)
 
 l0la is a sidecar cli utility to monitor vital stats of other processes on OSX at development
 time. It combines the output of `lsof`, `ps` and `netstat`, then monitors these values
