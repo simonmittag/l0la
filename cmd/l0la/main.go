@@ -41,7 +41,7 @@ func main() {
 	case Usage:
 		printUsage()
 	case Version:
-		fmt.Println(l0la.Logo())
+		printVersion()
 	}
 }
 
@@ -51,6 +51,10 @@ func parsePid() (int, error) {
 	}
 	pid, err := strconv.Atoi(flag.Args()[0])
 	return pid, err
+}
+
+func printVersion() {
+	fmt.Println(l0la.Logo())
 }
 
 func printUsage() {
