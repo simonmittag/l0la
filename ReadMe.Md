@@ -5,6 +5,8 @@ threads, files, network connections of your process for debugging purposes.
 
 [![Circleci Builds](https://circleci.com/gh/simonmittag/l0la.svg?style=shield)](https://circleci.com/gh/simonmittag/l0la)
 [![Github Activity](https://img.shields.io/github/commit-activity/m/simonmittag/mse6)](https://img.shields.io/github/commit-activity/m/simonmittag/l0la)  
+[![Codeclimate Maintainability](https://api.codeclimate.com/v1/badges/4f80639bc17c6987eb05/maintainability)](https://codeclimate.com/github/simonmittag/l0la/maintainability)
+[![Codeclimate Test Coverage](https://api.codeclimate.com/v1/badges/4f80639bc17c6987eb05/test_coverage)](https://codeclimate.com/github/simonmittag/l0la/test_coverage)
 [![Go Version](https://img.shields.io/github/go-mod/go-version/simonmittag/l0la)](https://img.shields.io/github/go-mod/go-version/simonmittag/l0la)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Version](https://img.shields.io/badge/version-0.1.3-orange)](https://github.com/simonmittag/l0la/releases/tag/v0.1.3)
