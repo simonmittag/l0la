@@ -13,6 +13,9 @@ threads, files, network connections of your process for debugging purposes.
 [![Version](https://img.shields.io/badge/version-0.1.3-orange)](https://github.com/simonmittag/l0la/releases/tag/v0.1.3)
 
 ## What's New
+### v0.1.4
+* bugfixes for macOS Ventura
+
 ### v0.1.3
 * bumped to go 1.20
 
