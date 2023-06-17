@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-const Version = "v0.1.3"
+const Version = "v0.1.4"
 
 func Watch(pid int, seconds ...int) {
 	lines := make([]io.Writer, 0)
