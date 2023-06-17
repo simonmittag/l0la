@@ -45,6 +45,14 @@ func main() {
 	}
 }
 
+func parseSecs() (int, error) {
+	if len(flag.Args()) != 1 {
+		return 0, errors.New("pid not supplied")
+	}
+	pid, err := strconv.Atoi(flag.Args()[0])
+	return pid, err
+}
+
 func parsePid() (int, error) {
 	if len(flag.Args()) != 1 {
 		return 0, errors.New("pid not supplied")

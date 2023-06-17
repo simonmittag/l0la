@@ -18,13 +18,6 @@ func TestMainFuncWithUsage(t *testing.T) {
 	main()
 }
 
-//infinite loop
-//func TestMainFuncWithPositionalArgsBeforeFlagArgs(t *testing.T) {
-//	//first arg is command
-//	os.Args = []string{"l0la", fmt.Sprintf("%v", os.Getpid())}
-//	main()
-//}
-
 func TestPrintVersion(t *testing.T) {
 	printVersion()
 }
