@@ -4,7 +4,6 @@ l0la is a simple cli utility that combines the output of `lsof`, `ps` and `netst
 threads, files, network connections of your process for debugging purposes.
 
 [![Circleci Builds](https://circleci.com/gh/simonmittag/l0la.svg?style=shield)](https://circleci.com/gh/simonmittag/l0la)
-[![Github Workflows](https://github.com/simonmittag/l0la/workflows/Go/badge.svg)](https://github.com/simonmittag/l0la/actions)
 [![Github Issues](https://img.shields.io/github/issues/simonmittag/l0la)](https://github.com/simonmittag/l0la/issues)
 [![Github Activity](https://img.shields.io/github/commit-activity/m/simonmittag/mse6)](https://img.shields.io/github/commit-activity/m/simonmittag/l0la)  
 [![Codeclimate Maintainability](https://api.codeclimate.com/v1/badges/4f80639bc17c6987eb05/maintainability)](https://codeclimate.com/github/simonmittag/l0la/maintainability)
